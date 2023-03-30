@@ -1,0 +1,32 @@
+{
+    "appenders": {
+        "console": {
+            "type": "console"
+        },
+        "info": {
+            "type": "dateFile",
+            "filename": "./logs/info.log",
+            "pattern": "-yyyy-MM-dd",
+            "alwaysIncludePattern": true,
+            "layout": {
+                "type": "basic"
+            }
+        },
+        "error": {
+            "type": "dateFile",
+            "filename": "./logs/error.log",
+            "pattern": "-yyyy-MM-dd",
+            "alwaysIncludePattern": true,
+            "layout": {
+                "type": "basic"
+            },
+            "level": "error"
+        }
+    },
+    "categories": {
+        "default": {
+            "appenders": ["console", "info", "error"],
+            "level": "debug"
+        }
+    }
+}

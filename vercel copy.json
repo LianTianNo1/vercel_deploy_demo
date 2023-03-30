@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "app.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "./scripts/setup.sh",
+            "use": "now-bash"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/app.js"
+        }
+    ],
+    "env": {
+        "OPENAI_API_KEY": "$OPENAI_API_KEY"
+    }
+}

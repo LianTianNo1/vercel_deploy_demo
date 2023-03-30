@@ -1,0 +1,11 @@
+# Your API Key for OpenAI
+
+OPENAI_API_KEY=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
+
+# Custom base url for OpenAI API. default: https://api.openai.com
+
+OPENAI_API_BASE_URL=https://openai.1rmb.tk/v1/chat/completions
+
+# ID of the model to use. https://platform.openai.com/docs/api-reference/models/list
+
+OPENAI_API_MODEL=gpt-3.5-turbo
