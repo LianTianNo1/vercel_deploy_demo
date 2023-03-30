@@ -3,7 +3,23 @@
     "builds": [
         {
             "src": "app.js",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": [
+                    "logs/**",
+                    "public/**",
+                    "routes/**",
+                    "utils/**",
+                    "dist/**",
+                    ".env",
+                    "package.json",
+                    "package-lock.json",
+                    "webpack.config.js",
+                    "nodemon.json",
+                    "Dockerfile",
+                    "log4js.json"
+                ]
+            }
         }
     ],
     "routes": [
